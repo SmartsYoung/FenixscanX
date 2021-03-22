@@ -1,0 +1,45 @@
+[console_scripts]
+scanengine = scanengine.cli:scanengine
+
+[scanengine_output]
+csv = formattedcode.output_csv:CsvOutput
+html = formattedcode.output_html:HtmlOutput
+html-app = formattedcode.output_html:HtmlAppOutput
+json = formattedcode.output_json:JsonCompactOutput
+json-pp = formattedcode.output_json:JsonPrettyOutput
+jsonlines = formattedcode.output_jsonlines:JsonLinesOutput
+spdx-rdf = formattedcode.output_spdx:SpdxRdfOutput
+spdx-tv = formattedcode.output_spdx:SpdxTvOutput
+template = formattedcode.output_html:CustomTemplateOutput
+
+[scanengine_output_filter]
+ignore-copyrights = cluecode.plugin_ignore_copyrights:IgnoreCopyrights
+only-findings = scanengine.plugin_only_findings:OnlyFindings
+
+[scanengine_post_scan]
+classify-package = summarycode.classify:PackageTopAndKeyFilesTagger
+consolidate = summarycode.plugin_consolidate:Consolidator
+filter-clues = cluecode.plugin_filter_clues:RedundantCluesFilter
+is-license-text = licensedcode.plugin_license_text:IsLicenseText
+license-clarity-score = summarycode.score:LicenseClarityScore
+license-policy = licensedcode.plugin_license_policy:LicensePolicy
+mark-source = scanengine.plugin_mark_source:MarkSource
+summary = summarycode.summarizer:ScanSummary
+summary-by-facet = summarycode.summarizer:ScanByFacetSummary
+summary-keeping-details = summarycode.summarizer:ScanSummaryWithDetails
+summary-key-files = summarycode.summarizer:ScanKeyFilesSummary
+
+[scanengine_pre_scan]
+classify = summarycode.classify:FileClassifier
+facet = summarycode.facet:AddFacet
+ignore = scanengine.plugin_ignore:ProcessIgnore
+
+[scanengine_scan]
+copyrights = cluecode.plugin_copyright:CopyrightScanner
+emails = cluecode.plugin_email:EmailScanner
+generated = summarycode.generated:GeneratedCodeDetector
+info = scanengine.plugin_info:InfoScanner
+licenses = licensedcode.plugin_license:LicenseScanner
+packages = packagedcode.plugin_package:PackageScanner
+urls = cluecode.plugin_url:UrlScanner
+

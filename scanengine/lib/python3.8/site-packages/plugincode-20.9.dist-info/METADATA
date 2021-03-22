@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: plugincode
+Version: 20.9
+Summary: plugincode is a library that provides plugin functionality for ScanCode toolkit.
+Home-page: https://github.com/nexB/plugincode
+Author: nexB. Inc. and others
+Author-email: info@aboutcode.org
+License: Apache-2.0
+Keywords: plugincode,scancode,scancode-toolkit
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: click
+Requires-Dist: commoncode
+Requires-Dist: pluggy
+Requires-Dist: six
+
+plugincode
+==========
+plugincode is a library that provides plugin functionality for ScanCode toolkit.
+
+

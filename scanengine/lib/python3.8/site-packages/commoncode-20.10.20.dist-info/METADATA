@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: commoncode
+Version: 20.10.20
+Summary: commoncode
+Home-page: https://github.com/nexB/commoncode
+Author: nexB. Inc. and others
+Author-email: info@aboutcode.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: attrs (!=20.1.0,>=18.1)
+Requires-Dist: click (>=6.0.0)
+Requires-Dist: text-unidecode (>=1.0)
+Requires-Dist: Beautifulsoup4 (<5.0.0,>=4.0.0)
+Requires-Dist: requests (<3.0.0,>=2.7.0)
+Requires-Dist: intbitset (<3.0,>=2.3.0)
+Requires-Dist: saneyaml
+Requires-Dist: typing (<3.7,>=3.6)
+Requires-Dist: backports.os (==0.1.1) ; python_version < "3"
+Provides-Extra: testing
+Requires-Dist: pytest (>=4) ; extra == 'testing'
+Requires-Dist: pytest-xdist (>=1) ; extra == 'testing'
+
+commoncode
+==========
+A set of common functions and utilities for handling various things like paths, dates,
+files and hashes
+
+

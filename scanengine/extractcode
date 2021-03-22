@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Copyright (c) 2015 nexB Inc. http://www.nexb.com/ - All rights reserved.
+#
+
+# A minimal shell wrapper to the CLI entry point
+
+SCANENGINE_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+SCANENGINE_CONFIGURED_PYTHON=$SCANENGINE_ROOT_DIR/bin/python
+if [ ! -f "$SCANENGINE_CONFIGURED_PYTHON" ]; then
+    echo "* Configuring ScanEngine for first use..."
+    CONFIGURE_QUIET=1 $SCANENGINE_ROOT_DIR/configure etc/conf
+fi
+
+$SCANENGINE_ROOT_DIR/bin/extractcode "$@"

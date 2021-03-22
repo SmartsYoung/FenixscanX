@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: extractcode
+Version: 20.10
+Summary: A set of utilities and functions for extracting archives.
+Home-page: https://github.com/nexB/extractcode
+Author: nexB. Inc. and others
+Author-email: info@aboutcode.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: commoncode (>=20.10)
+Requires-Dist: plugincode (>=20.09)
+Requires-Dist: typecode (>=20.10)
+Requires-Dist: typecode-libmagic (>=5.39.1.1)
+Requires-Dist: patch (>=1.15)
+Requires-Dist: extractcode-7z (>=16.5)
+Requires-Dist: extractcode-libarchive (>=3.4.3)
+Provides-Extra: testing
+Requires-Dist: pytest (>=6) ; extra == 'testing'
+Requires-Dist: pytest-xdist (>=2) ; extra == 'testing'
+
+A Simple Python Project Skeleton
+================================
+This repo attempts to standardize our python repositories using modern python
+packaging and configuration techniques. Using this `blog post`_ as inspiration, this
+repository will serve as the base for all new python projects and will be adopted to all 
+our existing ones as well.
+
+.. _blog post: https://blog.jaraco.com/a-project-skeleton-for-python-projects/
+
+Usage
+=====
+A brand new project
+-------------------
+.. code-block:: bash
+
+    git init my-new-repo
+    cd my-new-repo
+    git pull git@github.com:nexB/skeleton
+
+From here, you can make the appropriate changes to the files for your specific project.
+
+Update an existing project
+---------------------------
+.. code-block:: bash
+
+    cd my-existing-project
+    git remote add skeleton git@github.com:nexB/skeleton
+    git fetch skeleton
+    git merge skeleton --allow-unrelated-histories
+
+This is also the workflow to use when updating the skeleton files in any given repository.
+

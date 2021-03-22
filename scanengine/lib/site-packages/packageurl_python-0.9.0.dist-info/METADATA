@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: packageurl-python
+Version: 0.9.0
+Summary: A "purl" aka. package URL parser and builder
+Home-page: https://github.com/package-url/packageurl-python
+Author: the purl authors
+Author-email: UNKNOWN
+License: MIT
+Keywords: package,url,package manager,package url
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+
+Python library to parse and build "purl" aka. package URLs. This is a microlibrary implementing the purl spec at https://github.com/package-url
+
+

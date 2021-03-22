@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: aboutcode-toolkit
+Version: 5.1.0
+Summary: AboutCode-toolkit is a tool to document the provenance (origin and license) of third-party software using small text files. Collect inventories, generate attribution documentation.
+Home-page: http://aboutcode.org
+Author: Chin-Yeung Li, Jillian Daguil, Thomas Druez, Philippe Ombredanne and others.
+Author-email: info@nexb.com
+License: Apache-2.0
+Keywords: license,about,metadata,package,copyright,attribution,software,inventory
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: Utilities
+Requires-Dist: jinja2 (<3.0,>=2.9)
+Requires-Dist: click
+Requires-Dist: PyYAML (<=3.13,>=3.11)
+Requires-Dist: saneyaml
+Requires-Dist: boolean.py (<4.0,>=3.5)
+Requires-Dist: license-expression (>=0.94)
+Requires-Dist: packageurl-python (>=0.9.0)
+Requires-Dist: backports.csv; python_version < "3.6"
+Requires-Dist: backports.csv; python_version < '3.6'
+
+AttributeCode provides a simple way to document the provenance (i.e. origin and license) of software components that you use in your project. This documentation is stored in \*.ABOUT files, side-by-side with the documented code.
+
+

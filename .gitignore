@@ -1,0 +1,5 @@
+venv/
+scanengine/bin/
+scanengine/tmp/
+scanengine/.cache/
+.idea/

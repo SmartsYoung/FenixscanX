@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: typecode-libmagic
+Version: 5.39.1.1
+Summary: A ScanCode path provider plugin to provide a prebuilt native libmagic binary and database.
+Home-page: https://github.com/nexB/scancode-plugins
+Author: nexB
+Author-email: info@aboutcode.org
+License: bsd-simplified
+Keywords: open source,typecode,libmagic
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+
+A ScanCode path provider plugin to provide a prebuilt native libmagic binary and database.
+
+

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scanengine
+Version: 0.0.1
+Summary: scanengine is a copyright compliance tool powered by scanengine project.
+Home-page: UNKNOWN
+License: GPL-2.0
+Description: UNKNOWN
+Keywords: open source,scan
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4
+Provides-Extra: full
